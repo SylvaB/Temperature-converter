@@ -8,7 +8,7 @@ public class Main {
     //EXERCISE ONE
    //------------------------------------------------------------------------------------------------------------------
 
-    public static void LifeTimeSupply(){
+   /* public static void LifeTimeSupply(){*/
         // Exercise One - Computing a lifetime supply of your favorite snack!
         //
         // You just won a lifetime supply of your favorite snack.
@@ -45,9 +45,8 @@ public class Main {
         //
         // Then test out your program with different numbers and snack!
 
-
         // Write your code here
-        Scanner inputScanner = new Scanner(System.in);
+        /*Scanner inputScanner = new Scanner(System.in);
         System.out.println("Enter the name of your favorite snack: ");
 
         String snack = inputScanner.nextLine();
@@ -70,13 +69,12 @@ public class Main {
         System.out.println("Congratulations!  You have won a lifetime supply of your favorite " + snack + "!");
         System.out.println("You will receive " + numberOfSnacks + " " + snack + " per day, for a grand total of "+ numComma.format(snackLifetime) + " " + snack + ".");
 
-    }
+    }*/
 
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE TWO
     //------------------------------------------------------------------------------------------------------------------
-
-    public static void FutureAge(){
+    public static void main(String[] args) {
         // Exercise Two - Calculating your future age.
         //
         // You want to know how old you will be in any given year.  Create a piece of code that will compute
@@ -99,34 +97,30 @@ public class Main {
         //
         // Step Four:
         // Print your message to the console
-
-        System.out.println("Welcome to the Future Age Calculator!");
-
-        // Write your code here
         Scanner inputScanner = new Scanner(System.in);
-        System.out.println("Enter the year of your birth: ");
-
+        System.out.println("Enter your year of birth: ");
         int birthYear = inputScanner.nextInt();
         inputScanner.nextLine();
         System.out.println(birthYear);
 
-        System.out.println("Enter a year in the future: ");
+        System.out.println("Enter the year in future: ");
 
         int futureYear = inputScanner.nextInt();
         inputScanner.nextLine();
         System.out.println(futureYear);
 
-        int futureAge1 = (futureYear - birthYear);
-        int futureAge2 = futureAge1 ++;
+        int futureAge1 = futureYear - birthYear;
+        int futureAge2 = futureAge1 + 1;
 
-        System.out.println("You will be either " + futureAge1 + " or" + futureAge2 + " in " + birthYear + ".");
+        System.out.println("You will be either " + futureAge1 + " or " + futureAge2 + " in " + futureYear + ".");
+
     }
 
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE THREE
     //------------------------------------------------------------------------------------------------------------------
 
-    public static void TemperatureConversion(){
+    /*public static void TemperatureConversion(){
         // Exercise Three - Temperature Converter
         //
         // Build some code which can convert from Fahrenheit to Celsius, and also from Celsius to Fahrenheit.
@@ -193,5 +187,5 @@ public class Main {
         LifeTimeSupply();
         //FutureAge();
         //TemperatureConversion();
-    }
+    }*/
 }
