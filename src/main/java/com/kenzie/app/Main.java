@@ -1,5 +1,8 @@
 package com.kenzie.app;
 
+import java.text.NumberFormat;
+import java.util.Scanner;
+
 public class Main {
     //------------------------------------------------------------------------------------------------------------------
     //EXERCISE ONE
@@ -42,10 +45,30 @@ public class Main {
         //
         // Then test out your program with different numbers and snack!
 
-        System.out.println("Congratulations!  You have won a lifetime supply of your favorite snack!");
 
         // Write your code here
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Enter the name of your favorite snack: ");
 
+        String snack = inputScanner.nextLine();
+        System.out.println(snack);
+
+        System.out.println("Enter how many pieces of this snack do you eat per day: ");
+
+        int numberOfSnacks = inputScanner.nextInt();
+        inputScanner.nextLine();
+        System.out.println(numberOfSnacks);
+
+        System.out.println("Enter your age: ");
+
+        int age = inputScanner.nextInt();
+        inputScanner.nextLine();
+        System.out.println(age);
+        NumberFormat numComma = NumberFormat.getNumberInstance();
+
+        int snackLifetime = (365*(100-age))* numberOfSnacks;
+        System.out.println("Congratulations!  You have won a lifetime supply of your favorite " + snack + "!");
+        System.out.println("You will receive " + numberOfSnacks + " " + snack + " per day, for a grand total of "+ numComma.format(snackLifetime) + " " + snack + ".");
 
     }
 
@@ -80,6 +103,23 @@ public class Main {
         System.out.println("Welcome to the Future Age Calculator!");
 
         // Write your code here
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Enter the year of your birth: ");
+
+        int birthYear = inputScanner.nextInt();
+        inputScanner.nextLine();
+        System.out.println(birthYear);
+
+        System.out.println("Enter a year in the future: ");
+
+        int futureYear = inputScanner.nextInt();
+        inputScanner.nextLine();
+        System.out.println(futureYear);
+
+        int futureAge1 = (futureYear - birthYear);
+        int futureAge2 = futureAge1 ++;
+
+        System.out.println("You will be either " + futureAge1 + " or" + futureAge2 + " in " + birthYear + ".");
     }
 
     //------------------------------------------------------------------------------------------------------------------
