@@ -97,7 +97,7 @@ public class Main {
         //
         // Step Four:
         // Print your message to the console
-        Scanner inputScanner = new Scanner(System.in);
+       /* Scanner inputScanner = new Scanner(System.in);
         System.out.println("Enter your year of birth: ");
         int birthYear = inputScanner.nextInt();
         inputScanner.nextLine();
@@ -113,14 +113,13 @@ public class Main {
         int futureAge2 = futureAge1 + 1;
 
         System.out.println("You will be either " + futureAge1 + " or " + futureAge2 + " in " + futureYear + ".");
-
-    }
+    }*/
 
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE THREE
     //------------------------------------------------------------------------------------------------------------------
 
-    /*public static void TemperatureConversion(){
+    //public static void TemperatureConversion(){
         // Exercise Three - Temperature Converter
         //
         // Build some code which can convert from Fahrenheit to Celsius, and also from Celsius to Fahrenheit.
@@ -177,6 +176,15 @@ public class Main {
         System.out.println("Welcome to the Temperature Converter!");
 
         // Write your code here
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("What would you like to convert to, Celsius or Fahrenheit?");
+        String userTemp = inputScanner.nextLine();
+        System.out.println(userTemp);
+
+        System.out.println("Type value: ");
+        int selectValue = inputScanner.nextInt();
+        System.out.println(selectValue);
+
 
     }
 
@@ -184,8 +192,8 @@ public class Main {
         //To run your code uncomment the code for each exercise as you write them and want to test them
         //and see the output.
 
-        LifeTimeSupply();
+        //LifeTimeSupply();
         //FutureAge();
-        //TemperatureConversion();
-    }*/
+        TemperatureConversion();
+    }
 }
