@@ -74,7 +74,7 @@ public class Main {
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE TWO
     //------------------------------------------------------------------------------------------------------------------
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
         // Exercise Two - Calculating your future age.
         //
         // You want to know how old you will be in any given year.  Create a piece of code that will compute
@@ -173,6 +173,16 @@ public class Main {
         // Write your code here
 
 
+
+
+
+
+    public static void main(String [] args){
+        //To run your code uncomment the code for each exercise as you write them and want to test them
+        //and see the output.
+
+        //LifeTimeSupply();
+        //FutureAge();
         System.out.println("Welcome to the Temperature Converter!");
 
         // Write your code here
@@ -181,19 +191,25 @@ public class Main {
         String userTemp = inputScanner.nextLine();
         System.out.println(userTemp);
 
-        System.out.println("Type value: ");
-        int selectValue = inputScanner.nextInt();
+        System.out.println("What value would you like to convert to? Enter a number.");
+        double selectValue = inputScanner.nextDouble();
         System.out.println(selectValue);
 
-
-    }
-
-    public static void main(String [] args){
-        //To run your code uncomment the code for each exercise as you write them and want to test them
-        //and see the output.
-
-        //LifeTimeSupply();
-        //FutureAge();
-        TemperatureConversion();
+        if (userTemp.equals("c") || userTemp.equals("C")) {
+            System.out.println("°C");
+        }
+        else if (userTemp.equals("f") || userTemp.equals("F")) {
+            System.out.println("°F");
+        }else{
+                System.out.println("Error!");
+            }
+        double result1 = 0;
+        double result2 = 0;
+        if () {
+            System.out.println();
+        }
+        result1 = ((selectValue /5) * 9) + 32;
+        result2 = ((selectValue - 32)* 5)/9;
+        System.out.println(  "converted to ");
     }
 }
