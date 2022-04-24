@@ -8,7 +8,9 @@ public class Main {
     //EXERCISE ONE
    //------------------------------------------------------------------------------------------------------------------
 
-   /* public static void LifeTimeSupply(){*/
+
+    public static void main(String[] args) {
+
         // Exercise One - Computing a lifetime supply of your favorite snack!
         //
         // You just won a lifetime supply of your favorite snack.
@@ -46,7 +48,7 @@ public class Main {
         // Then test out your program with different numbers and snack!
 
         // Write your code here
-        /*Scanner inputScanner = new Scanner(System.in);
+        Scanner inputScanner = new Scanner(System.in);
         System.out.println("Enter the name of your favorite snack: ");
 
         String snack = inputScanner.nextLine();
@@ -69,12 +71,12 @@ public class Main {
         System.out.println("Congratulations!  You have won a lifetime supply of your favorite " + snack + "!");
         System.out.println("You will receive " + numberOfSnacks + " " + snack + " per day, for a grand total of "+ numComma.format(snackLifetime) + " " + snack + ".");
 
-    }*/
+    }
 
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE TWO
     //------------------------------------------------------------------------------------------------------------------
-    //public static void main(String[] args) {
+   /* public static void main(String[] args) {
         // Exercise Two - Calculating your future age.
         //
         // You want to know how old you will be in any given year.  Create a piece of code that will compute
@@ -97,7 +99,7 @@ public class Main {
         //
         // Step Four:
         // Print your message to the console
-       /* Scanner inputScanner = new Scanner(System.in);
+        Scanner inputScanner = new Scanner(System.in);
         System.out.println("Enter your year of birth: ");
         int birthYear = inputScanner.nextInt();
         inputScanner.nextLine();
@@ -177,7 +179,7 @@ public class Main {
 
 
 
-    public static void main(String [] args){
+    /*public static void main(String [] args){
         //To run your code uncomment the code for each exercise as you write them and want to test them
         //and see the output.
 
@@ -186,30 +188,34 @@ public class Main {
         System.out.println("Welcome to the Temperature Converter!");
 
         // Write your code here
+        double result;
+        double temp;
+        String temp1;
+        String c;
+
         Scanner inputScanner = new Scanner(System.in);
         System.out.println("What would you like to convert to, Celsius or Fahrenheit?");
-        String userTemp = inputScanner.nextLine();
-        System.out.println(userTemp);
+        temp1 = inputScanner.nextLine();
+        System.out.println(temp1);
 
         System.out.println("What value would you like to convert to? Enter a number.");
-        double selectValue = inputScanner.nextDouble();
-        System.out.println(selectValue);
+        temp = inputScanner.nextDouble();
+        inputScanner.nextLine();
+        System.out.println(temp);
 
-        if (userTemp.equals("c") || userTemp.equals("C")) {
-            System.out.println("°C");
+        if (temp1.equalsIgnoreCase("c")) {
+            String tempF = ("°F");
+            String cels = ("°C");
+            result = (temp - 32) * 5 / 9;
+            c = "Celsius";
+            System.out.println(temp + tempF + " converted to " + c + " is " +result + cels +".");
         }
-        else if (userTemp.equals("f") || userTemp.equals("F")) {
-            System.out.println("°F");
-        }else{
-                System.out.println("Error!");
-            }
-        double result1 = 0;
-        double result2 = 0;
-        if () {
-            System.out.println();
-        }
-        result1 = ((selectValue /5) * 9) + 32;
-        result2 = ((selectValue - 32)* 5)/9;
-        System.out.println(  "converted to ");
+        else if (temp1.equalsIgnoreCase("f")) {
+            String tempC = ("°C");
+            String fahr = ("°F");
+            result = ((temp / 5) * 9) + 32;
+            c = "Fahrenheit";
+                System.out.println(temp + tempC + " converted to " + c + " is " + result + fahr + ".");
+        }*/
     }
-}
+
