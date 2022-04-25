@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Main {
     //------------------------------------------------------------------------------------------------------------------
     //EXERCISE ONE
-   //------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------
 
 
-    public static void main(String[] args) {
+    public static void LifeTimeSupply() {
 
         // Exercise One - Computing a lifetime supply of your favorite snack!
         //
@@ -67,16 +67,16 @@ public class Main {
         System.out.println(age);
         NumberFormat numComma = NumberFormat.getNumberInstance();
 
-        int snackLifetime = (365*(100-age))* numberOfSnacks;
+        int snackLifetime = (365 * (100 - age)) * numberOfSnacks;
         System.out.println("Congratulations!  You have won a lifetime supply of your favorite " + snack + "!");
-        System.out.println("You will receive " + numberOfSnacks + " " + snack + " per day, for a grand total of "+ numComma.format(snackLifetime) + " " + snack + ".");
+        System.out.println("You will receive " + numberOfSnacks + " " + snack + " per day, for a grand total of " + numComma.format(snackLifetime) + " " + snack + ".");
 
     }
 
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE TWO
     //------------------------------------------------------------------------------------------------------------------
-   /* public static void main(String[] args) {
+    public static void FutureAge() {
         // Exercise Two - Calculating your future age.
         //
         // You want to know how old you will be in any given year.  Create a piece of code that will compute
@@ -115,13 +115,13 @@ public class Main {
         int futureAge2 = futureAge1 + 1;
 
         System.out.println("You will be either " + futureAge1 + " or " + futureAge2 + " in " + futureYear + ".");
-    }*/
+    }
 
     //------------------------------------------------------------------------------------------------------------------
     // EXERCISE THREE
     //------------------------------------------------------------------------------------------------------------------
 
-    //public static void TemperatureConversion(){
+    public static void TemperatureConversion() {
         // Exercise Three - Temperature Converter
         //
         // Build some code which can convert from Fahrenheit to Celsius, and also from Celsius to Fahrenheit.
@@ -172,21 +172,7 @@ public class Main {
         // Note that some of your numbers may have many decimal places!
         // Like 76.266666666667, that's perfectly fine!  You can leave those as is.
         //
-        // Write your code here
-
-
-
-
-
-
-    /*public static void main(String [] args){
-        //To run your code uncomment the code for each exercise as you write them and want to test them
-        //and see the output.
-
-        //LifeTimeSupply();
-        //FutureAge();
         System.out.println("Welcome to the Temperature Converter!");
-
         // Write your code here
         double result;
         double temp;
@@ -208,14 +194,22 @@ public class Main {
             String cels = ("°C");
             result = (temp - 32) * 5 / 9;
             c = "Celsius";
-            System.out.println(temp + tempF + " converted to " + c + " is " +result + cels +".");
-        }
-        else if (temp1.equalsIgnoreCase("f")) {
+            System.out.println(temp + tempF + " converted to " + c + " is " + result + cels + ".");
+        } else if (temp1.equalsIgnoreCase("f")) {
             String tempC = ("°C");
             String fahr = ("°F");
             result = ((temp / 5) * 9) + 32;
             c = "Fahrenheit";
                 System.out.println(temp + tempC + " converted to " + c + " is " + result + fahr + ".");
-        }*/
-    }
+        }
+        public static void main(String [] args){
+            //To run your code uncomment the code for each exercise as you write them and want to test them
+            //and see the output.
 
+              LifeTimeSupply();
+            //FutureAge();
+            //TemperatureConversion();
+        }
+
+    }
+}
