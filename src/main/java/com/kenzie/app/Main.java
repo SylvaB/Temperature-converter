@@ -200,16 +200,16 @@ public class Main {
             String fahr = ("°F");
             result = ((temp / 5) * 9) + 32;
             c = "Fahrenheit";
-                System.out.println(temp + tempC + " converted to " + c + " is " + result + fahr + ".");
+            System.out.println(temp + tempC + " converted to " + c + " is " + result + fahr + ".");
         }
-        public static void main(String [] args){
+    }
+    public static void main(String [] args){
             //To run your code uncomment the code for each exercise as you write them and want to test them
             //and see the output.
 
-              LifeTimeSupply();
-            //FutureAge();
-            //TemperatureConversion();
+            //LifeTimeSupply();
+           //FutureAge();
+           TemperatureConversion();
         }
 
     }
-}
